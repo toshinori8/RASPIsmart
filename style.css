@@ -32,6 +32,7 @@ body.dark{
 
 body.dark #sha_temp_body .sha_temp {
     margin-top: 20px;
+
     background-color: azure;
     position: relative;
     display: inline-block;
@@ -191,19 +192,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
 {
  
 
-
   
     margin-top: 23px;
 }
 .white_back{
-    background-color: rgba(255,255,255,0.3) !important;
+  background-color: rgba(241,241,241,1.3) !important;
 }
+
+
+
+#sha_temp_body .sha_tile .white_back{ 
+
+    position: absolute;
+   z-index: 120;
+    
+    
+}
+
 
 #sha_temp_body .sha_temp
 {   
     margin-top: 20px;
-    
-    position: relative;
+    z-index: 10000;
+    position: absolute;
     display: inline-block;
     width: 230px;
     height: 230px;
